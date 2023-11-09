@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="main.js"></script>
+</head>
+<header>
+    <nav>
+        <h1>Match Game</h1>
+        <ul>
+            <li><a href="main.html">Replay</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body onload="initialize();">
+    <center>
+        <div id="gameMenu">
+            <h2 id="score">Score: 0</h2>
+            <div>
+                <button onclick="reset(4, 4);" class="textDiv">New Easy</button>
+                <button onclick="reset(5, 4);" class="textDiv">New Medium</button>
+                <button onclick="reset(5, 6);" class="textDiv">New Hard</button>
+            </div>
+            <div id="grid" class="grid"></div>
+        </div>
+        <div id="resetMenu" hidden>
+            <h3>New Game?</h3>
+            <h3 id="finalScore"></h3>
+            <h4 id="message"></h4>
+            <button onclick="reset(4, 4);" class="buttonDiv">Easy</button>
+            <button onclick="reset(5, 4);" class="buttonDiv">Medium</button>
+            <button onclick="reset(5, 6);" class="buttonDiv">Hard</button>
+        </div>
+    </center>
+</body>
+
+</html>

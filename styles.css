@@ -1,0 +1,183 @@
+/*
+Color Palette : 
+- #820e0b - text
+- #220504 - backgrounds
+- #590a08 - borders
+- #ffffff - transition text
+*/
+header {
+    background-color: #220504;
+    color: #820e0b;
+    border: 5px solid #590a08;
+    border-radius: 25px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: "Comfortaa", sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: #820e0b;
+    text-decoration: none;
+    transition-duration: 0.75s;
+    font-size: 200%;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+body {
+    font: "Comfortaa", sans-serif;
+    background-image: url("images/orangeleaf.png");
+    background-position: 0 0;
+    background-size:cover;
+}
+
+body .textDiv {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #220504;
+    color: #820e0b;
+    border: 5px solid #590a08;
+    border-radius: 25px;
+    padding: 2%;
+    font-size: 125%;
+    transition-duration: 0.75s;
+}
+
+body .buttonDiv {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #220504;
+    color: #820e0b;
+    border: 5px solid #590a08;
+    border-radius: 25px;
+    padding: 2%;
+    font-size: 200%;
+    transition-duration: 0.75s;
+}
+
+body .textDiv:hover {
+    cursor: pointer;
+    color: #ffffff;
+    transform: scale(1.05);
+    border-color: #ffffff;
+}
+
+.tile {
+    display: inline-flex;
+    margin: 20px;
+    height: 200;
+    border: none;
+    border-radius: 10px;
+    transform-style: preserve-3d;
+    transition: all 0.75s ease;
+}
+
+.tile:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    border-color: #ffffff;
+}
+
+.tileFront:hover {
+    cursor: pointer;
+    border-color: #ffffff;
+}
+
+.tileBack:hover {
+    cursor: pointer;
+    border-color: #ffffff;
+}
+
+.tileBack {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    background-color: #220504;
+    color: #820e0b;
+    border: 5px solid #590a08;
+}
+
+.tileFront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    background-color: #220504;
+    color: #820e0b;
+    border: 5px solid #590a08;
+}
+
+.row {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 300%;
+    color: #820e0b;
+}
+
+h2 {
+    /* score display */
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 200%;
+    background-color: #220504;
+    color: #820e0b;
+    border: 5px solid #590a08;
+}
+
+h3 {
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-left: 40%;
+    margin-right: 40%;
+    font-size: 250%;
+    background-color: #220504;
+    color: #820e0b;
+    border: 5px solid #590a08;
+}
+
+p {
+    text-align: center;
+    font-size: 150%;
+    color: #820e0b;
+}
+
+.buttonDiv:hover {
+    cursor: pointer;
+    color: #ffffff;
+    transform: scale(1.05);
+    border-color: #ffffff;
+}
